@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Radar Fiscal: Notícias que Importam</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        .box { border: 1px solid #ccc; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        .price { font-size: 24px; color: green; font-weight: bold; }
+        .button { display: inline-block; background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Radar Fiscal BR</h1>
+        <p>As 3 notícias fiscais que podem custar dinheiro ao seu negócio. Sem ruído, só o que importa.</p>
+        
+        <div class="box">
+            <h3>Última Atualização: <span id="data-hoje">Carregando...</span></h3>
+            <div id="conteudo-noticias">
+                <p><strong>1. Nova regra para MEI:</strong> Prazo para declaração mudado.</p>
+                <p><strong>2. ICMS no E-commerce:</strong> Mudança nas alíquotas para SP.</p>
+                <p><strong>3. Simples Nacional:</strong> Ajuste no anexo IV.</p>
+            </div>
+        </div>
+
+        <div class="box" style="background-color: #f9f9f9;">
+            <h2>Quer receber isso todo dia às 8h?</h2>
+            <p>Assine agora e evite multas.</p>
+            <p class="price">R$ 49,00 / mês</p>
+            <!-- AQUI VOCÊ VAI COLOCAR SEU LINK DO STRIPE -->
+            <a href="SEU_LINK_STRIPE_AQUI" class="button">Assinar Agora</a>
+        </div>
+    </div>
+    
+    <script>
+        // Atualiza a data de hoje automaticamente
+        document.getElementById('data-hoje').innerText = new Date().toLocaleDateString('pt-BR');
+    </script>
+</body>
+</html>
